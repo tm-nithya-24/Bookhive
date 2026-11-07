@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BookHive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you.</p>
+</section>
+
+<main class="contact-section">
+
+    <div class="contact-info">
+        <p class="eyebrow">CONTACT BOOKHIVE</p>
+        <h2>Let's Start a Conversation</h2>
+
+        <p>
+            Have a question, suggestion, or feedback?
+            Send us a message using the contact form.
+        </p>
+
+        <div class="contact-detail">
+            <span>📧</span>
+            <p>support@bookhive.example</p>
+        </div>
+
+        <div class="contact-detail">
+            <span>📚</span>
+            <p>BookHive Online Bookstore</p>
+        </div>
+    </div>
+
+    <div class="contact-form-card">
+
+        <form id="contact-form">
+
+            <label for="contact-name">Your Name</label>
+            <input
+                type="text"
+                id="contact-name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="contact-email">Email Address</label>
+            <input
+                type="email"
+                id="contact-email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="contact-subject">Subject</label>
+            <input
+                type="text"
+                id="contact-subject"
+                placeholder="Enter subject"
+                required
+            >
+
+            <label for="contact-message">Message</label>
+            <textarea
+                id="contact-message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn full-btn">
+                Send Message
+            </button>
+
+            <p id="contact-status" class="form-message"></p>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

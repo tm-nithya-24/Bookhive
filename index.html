@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHive | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO BOOKHIVE</p>
+
+            <h1>Discover Stories.<br>
+                <span>Explore Worlds.</span>
+            </h1>
+
+            <p>
+                Find your next favourite book from our carefully
+                selected collection. Read more, learn more and grow every day.
+            </p>
+
+            <a href="books.html" class="btn">Explore Books →</a>
+        </div>
+
+        <div class="hero-art">
+            <div class="hero-book book-one">THE<br>POWER<br>OF IDEAS</div>
+            <div class="hero-book book-two">DREAM<br>BIG</div>
+            <div class="hero-book book-three">NEW<br>CHAPTERS</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="eyebrow">BROWSE BY INTEREST</p>
+            <h2>Explore Categories</h2>
+        </div>
+
+        <div class="category-grid">
+            <a href="books.html?category=Fiction" class="category-card">
+                <span>📖</span>
+                <h3>Fiction</h3>
+            </a>
+
+            <a href="books.html?category=Technology" class="category-card">
+                <span>💻</span>
+                <h3>Technology</h3>
+            </a>
+
+            <a href="books.html?category=Self-Help" class="category-card">
+                <span>🌱</span>
+                <h3>Self-Help</h3>
+            </a>
+
+            <a href="books.html?category=Business" class="category-card">
+                <span>📈</span>
+                <h3>Business</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="eyebrow">OUR SELECTION</p>
+            <h2>Featured Books</h2>
+        </div>
+
+        <div id="featured-books" class="book-grid"></div>
+
+        <div class="center">
+            <a href="books.html" class="btn-outline">View All Books</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>A good book can change your day.</h2>
+        <p>Start your next reading journey with BookHive.</p>
+        <a href="books.html" class="btn">Start Exploring</a>
+    </section>
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/books.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books | BookHive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="eyebrow">THE BOOK COLLECTION</p>
+    <h1>Explore Our Books</h1>
+    <p>Find something interesting to read.</p>
+</section>
+
+<main class="catalogue">
+
+    <div class="filter-bar">
+
+        <input
+            type="search"
+            id="search-input"
+            placeholder="Search books or authors..."
+        >
+
+        <select id="category-filter">
+            <option value="All">All Categories</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Technology">Technology</option>
+            <option value="Self-Help">Self-Help</option>
+            <option value="Business">Business</option>
+        </select>
+
+        <select id="sort-filter">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+        </select>
+
+    </div>
+
+    <p id="result-count"></p>
+
+    <div id="books-container" class="book-grid"></div>
+
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/books.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

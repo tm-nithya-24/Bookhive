@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | BookHive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main class="auth-section">
+
+    <div class="auth-card">
+        <p class="eyebrow">JOIN OUR COMMUNITY</p>
+        <h1>Create Account</h1>
+        <p class="auth-description">Become a part of BookHive.</p>
+
+        <form id="signup-form">
+
+            <label for="signup-name">Full Name</label>
+            <input
+                type="text"
+                id="signup-name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="signup-email">Email Address</label>
+            <input
+                type="email"
+                id="signup-email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="signup-password">Password</label>
+            <input
+                type="password"
+                id="signup-password"
+                placeholder="Create a password"
+                minlength="6"
+                required
+            >
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm your password"
+                required
+            >
+
+            <button type="submit" class="btn full-btn">
+                Create Account
+            </button>
+
+            <p id="signup-message" class="form-message"></p>
+
+        </form>
+
+        <p class="auth-switch">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

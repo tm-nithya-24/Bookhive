@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BookHive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="login.html">Login</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main class="auth-section">
+
+    <div class="auth-card">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h1>Login to BookHive</h1>
+        <p class="auth-description">Continue your reading journey.</p>
+
+        <form id="login-form">
+
+            <label for="login-email">Email Address</label>
+            <input
+                type="email"
+                id="login-email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="login-password">Password</label>
+            <input
+                type="password"
+                id="login-password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit" class="btn full-btn">Login</button>
+
+            <p id="login-message" class="form-message"></p>
+
+        </form>
+
+        <p class="auth-switch">
+            Don't have an account?
+            <a href="signup.html">Create Account</a>
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

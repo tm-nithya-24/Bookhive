@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | BookHive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Book<span>Hive.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a class="active" href="cart.html">
+            Cart (<span class="cart-count">0</span>)
+        </a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="eyebrow">YOUR COLLECTION</p>
+    <h1>Shopping Cart</h1>
+    <p>Review the books you have selected.</p>
+</section>
+
+<main class="cart-section">
+
+    <div id="cart-items"></div>
+
+    <aside class="cart-summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Total Items</span>
+            <span id="total-items">0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Total Amount</span>
+            <span id="total-price">₹0</span>
+        </div>
+
+        <button class="btn checkout-btn" onclick="checkout()">
+            Proceed to Checkout
+        </button>
+    </aside>
+
+</main>
+
+<footer>
+    <h2>BookHive.</h2>
+    <p>Discover. Read. Grow.</p>
+    <p>© 2026 BookHive. All rights reserved.</p>
+</footer>
+
+<script src="js/books.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

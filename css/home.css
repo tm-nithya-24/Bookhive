@@ -1,0 +1,112 @@
+.hero {
+    min-height: 540px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.15;
+    margin: 15px 0 25px;
+}
+
+.hero-content h1 span {
+    color: var(--brown);
+}
+
+.hero-content > p:not(.eyebrow) {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: rotate(-5deg);
+}
+
+.hero-book {
+    width: 110px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 3px;
+    box-shadow: 8px 12px 20px #0002;
+}
+
+.book-one {
+    background: #8B5738;
+}
+
+.book-two {
+    background: #49665B;
+    height: 275px;
+}
+
+.book-three {
+    background: #B88B52;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    padding: 30px 15px;
+    text-align: center;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0001;
+}
+
+.category-card span {
+    font-size: 35px;
+}
+
+.category-card h3 {
+    margin-top: 12px;
+}
+
+.newsletter {
+    margin: 20px 8% 70px;
+    padding: 55px 20px;
+    text-align: center;
+    color: white;
+    background: #60452F;
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.newsletter p {
+    margin: 12px 0 25px;
+    color: #eee0d2;
+}
